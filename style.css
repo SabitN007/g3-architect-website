@@ -1,11 +1,12 @@
 /*  work sans font from google */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     font-family: 'Work Sans', sans-serif;
 }
+
 /* sheared style */
-.btn-primary{
+.btn-primary {
     border-radius: 8px;
     color: #fff;
     background: #FF900E;
@@ -17,50 +18,59 @@
 }
 
 /* Header styles */
-header{
+header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 240px;
     padding-top: 0px;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav-title{
+
+.nav-title {
     font-size: 3rem;
     font-weight: 700;
     color: #131313;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
-    
+
 }
-nav li{
+
+nav li {
     list-style: none;
     margin: 30px;
     font-weight: 500;
     font-size: 1rem;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
-    color:#424242 ;
+    color: #424242;
 }
+
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-tittle{
+
+.banner-tittle {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
-.banner-description{
-    color:#727272 ;
+
+.banner-description {
+    color: #727272;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
@@ -68,22 +78,58 @@ nav li a{
 /* responsive media */
 /* mobile device */
 @media screen and (max-width: 576px) {
-    header{
-    padding: 20px;
-}
-nav{
-    flex-direction: column;
-}
-nav > ul{
-    flex-direction: column;}
-}
-/* tablet */
+    header {
+        padding: 20px;
+    }
 
-@media screen and (min-width: 576px) and (max-width: 960px){
-   header{
-    padding: 50px;
-   }
-    nav{
+    nav {
         flex-direction: column;
     }
+
+    nav>ul {
+        flex-direction: column;
+    }
+}
+
+/* tablet */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* main section start */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* teams style */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right:70px ;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.teams-title .quick-list{
+    color:#727272;
+    font-weight: 500;
+}
+.teams-title .text-features{
+    color: #FF900E;
+    font-weight: 700;
 }
